@@ -1,9 +1,9 @@
 const projects = [
-  { id: 1, title: "????-???????", tech: "HTML/CSS" },
+  { id: 1, title: "Business Card Website", tech: "HTML/CSS" },
   { id: 2, title: "Todo App", tech: "JavaScript" },
-  { id: 3, title: "?????????", tech: "HTML/CSS/JS" },
-  { id: 4, title: "????", tech: "HTML + CSS" },
-  { id: 5, title: "???????????", tech: "JS" }
+  { id: 3, title: "Portfolio Website", tech: "HTML/CSS/JS" },
+  { id: 4, title: "Blog Platform", tech: "HTML + CSS" },
+  { id: 5, title: "Calculator", tech: "JavaScript" }
 ];
 
 const container = document.querySelector('#projects-container');
@@ -18,7 +18,6 @@ function createProjectCard(project) {
   `;
 }
 
-// ??????
 function renderProjects(list) {
   if (!container) return;
 
@@ -29,7 +28,6 @@ function renderProjects(list) {
   container.innerHTML = html;
 }
 
-// ?????
 if (searchInput) {
   searchInput.addEventListener('input', () => {
     const value = searchInput.value.toLowerCase();
@@ -42,5 +40,4 @@ if (searchInput) {
   });
 }
 
-// ???????? ????????
 renderProjects(projects);
